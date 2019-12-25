@@ -1,0 +1,1145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+body{
+    overflow-x: hidden;
+}
+.first-image-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 670px;
+    background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('beautiful.jpg') ;
+    background-position: center;
+    background-size: cover;
+}
+.logo-and-nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 110px;
+    border-bottom: 5px solid #5582cf;
+    width: 100%;
+    background-color: white;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.logo{
+    width: 260px;
+    height: 80px;
+    background-image: url('ace.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.nav{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 110px;
+}
+.nav-links{
+    color: black;
+    display: flex;
+    width: 55%;
+    height: 110px;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-links li{
+    list-style-type: none;
+}
+.nav-links a{
+    color:  black;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-family: montserrat;
+}
+button{
+    display: none;
+}
+.burger{
+    display: none;
+}
+.burger div{
+    background-color: black;
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    margin: 3px;
+}
+button{
+    background-color: none;
+    border: none;
+}
+.overlay{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+}
+.overlay_content{
+    display: flex;
+    justify-content: space-around;
+    height: 30%;
+    flex-direction: column;
+    background-color: white;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0px 0px 10px black ;
+}
+.overlay a{
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color:  black;
+    letter-spacing: 3px;
+    transition: all 0.7s ease;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+    padding: 10px;
+    transition: 0.2s ease;
+}
+ul li a:hover{
+    background-color:  #5582cf;
+    color: white;
+}
+.login{
+    background-color: #f9be3c;
+    height: 40px;
+    width: 70px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.login:hover{
+    border: 2px solid white;
+}
+.first-write-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 700px;
+    height: 400px;
+    margin-top: 175px;
+    margin-left: 50px;
+}
+.head{
+    display: flex;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+.write-up{
+    font-family: montserrat;
+    color: white;
+    width: 550px;
+    line-height: 35px;
+    font-size: 16px;
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.btn2:hover{
+    background-color:  #3072e2;
+}
+.head2{
+    margin-top: 30px;
+    font-family: montserrat;
+    font-size: 32px;
+}
+.head2-container{
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('digital.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.head2-write-up{
+    width: 60%;
+    margin-top: 50px;
+    font-family: montserrat;
+    line-height: 25px;
+}
+.our-concepts{
+    margin-top: 50px;
+    font-size: 32px;
+    font-family: montserrat;
+}
+.line1{
+    width: 4%;
+    height: 2px;
+    margin-top: 2px;
+    background-color: #5582cf;
+}
+.concept-container{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+.concept-container-image{
+    width: 600px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 100px; 
+    background-image: url('concept.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.concept-write-up{
+    width: 500px;
+    line-height: 32px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.team-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('3004976.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.team-container-write-up{
+    width: 70%;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: montserrat;
+    color: white;
+}
+.line2{
+    width: 70%;
+    height: 2px;
+    margin-top: 50px;
+    background-color: #5582cf;
+}
+.image-gallery{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+}
+.image-clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat;
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    height: 200px;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('10869.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.image-clients:hover{
+    width: 300px;
+    height: 220px;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('10869.jpg');
+}
+.image-support{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat;
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    height: 200px;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('16548.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.image-support:hover{
+    width: 300px;
+    height: 220px;
+}
+.image-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat;
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    height: 200px;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('glasses.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.image-services:hover{
+    width: 300px;
+    height: 220px;
+}
+
+.image-our-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 1px;
+    width: 300px;
+    height: 200px;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('group.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.image-our-team:hover{
+    width: 300px;
+    height: 220px;
+}
+.write-up3{
+    width: 900px;
+    height: 150px;
+    line-height: 32px;
+    margin-top: 40px;
+
+}
+.line3{
+    width: 90%;
+    height: 2px;
+    margin-top: 70px;
+    background-color: #5582cf;
+}
+.We-are-ace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 100px;
+    margin-top: 30px;
+    font-size: 35px;
+    border-right: 4px solid #f9be3c;
+}
+footer{
+    background-color:#0a0a0a;
+    height: 600px;
+    width: 100%;
+    color: rgb(105, 105, 105);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 7%;
+    margin-top: 30px;
+}
+.footer-shell{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.whatsapp-phone-envelope-and-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px;
+    height: 300px;
+}
+.whatsapp-phone-envelope{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+}
+.text{
+    font-size: 14px;
+    line-height: 30px;
+    width: 700px;
+}
+num{
+    color: white;
+}
+.whatsapp{
+    display: flex;
+    width: 220px;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+.whatsapp-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    border-radius: 100px;
+    color: white;
+    background-color: rgb(32, 32, 32);
+}
+.phone{
+    display: flex;
+    width: 210px;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+.phone-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 100px;
+    color: white;
+    background-color: rgb(32,32,32);
+}
+.envelope{
+    display: flex;
+    width: 227px;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;  
+}
+.envelope-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    border-radius: 100px;
+    color: white;
+    background-color: rgb(32,32,32);
+}
+mail{
+    color: white;
+}
+.footer-write-about-the-company-with-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+    height: 310px;
+}
+.header{
+    color: white;
+}
+.write-up-body{
+    font-size: 14px;
+    line-height: 27px;
+    margin-top: 2.5%;
+}
+.icons{
+    display: flex;
+    width: 280px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+.facebook{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(32,32,32);
+}
+.twitter{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(32,32,32);
+}
+.instagram{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(32,32,32);
+}
+.linkedin{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(32,32,32);
+}
+.line-for-copyright{
+    width: 90%;
+    height: 1px;
+    margin-left: 5%;
+    background-color: white;
+}
+.copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1024px){
+    .logo-and-nav{
+        display: flex;
+        height: 120px;
+        border-bottom: 5px solid #5582cf;
+        width: 100%;
+    }
+    .logo{
+        width: 275px;
+        height: 90px;
+        background-image: url('ace.jpg');
+        background-position: center;
+        background-size: cover;
+        margin-top: 13px;
+        margin-left: 15px;
+    }    
+    .nav{
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 110px;
+    }
+    .nav-links{
+        color: black;
+        display: flex;
+        width: 70%;
+        height: 110px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .concept-container{
+        display: flex;
+        width: 100%;
+        height: 500px;
+    }
+    .concept-container-image{
+        width: 600px;
+        height: 400px;
+        margin-top: 30px;
+        margin-left: 0px; 
+        background-image: url('concept.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .concept-write-up{
+        width: 400px;
+        line-height: 32px;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    .image-clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: montserrat;
+        font-size: 20px;
+        color: white;
+        width: 250px;
+        height: 200px;
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('10869.jpg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.4s ease;
+    }
+    .image-clients:hover{
+        width: 260px;
+        height: 220px;
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('10869.jpg');
+    }
+    .image-support{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: montserrat;
+        font-size: 20px;
+        color: white;
+        width: 250px;
+        height: 200px;
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('16548.jpg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.4s ease;
+    }
+    .image-support:hover{
+        width: 260px;
+        height: 220px;
+    }
+    .image-services{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: montserrat;
+        font-size: 20px;
+        color: white;
+        width: 250px;
+        height: 200px;
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('glasses.jpg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.4s ease;
+    }
+    .image-services:hover{
+        width: 260px;
+        height: 220px;
+    }
+    
+    .image-our-team{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: montserrat;
+        font-size: 20px;
+        color: white;
+        padding-bottom: 1px;
+        width: 250px;
+        height: 200px;
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('group.jpg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.4s ease;
+    }
+    .image-our-team:hover{
+        width: 260px;
+        height: 220px;
+    }
+    .text{
+        width: 500px;
+    }
+    .whatsapp-phone-envelope-and-text{
+        width: 600px;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .first-image-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 560px;
+        background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('beautiful.jpg') ;
+        background-position: center;
+        background-size: cover;
+    }    
+    .logo-and-nav{
+        display: flex;
+        height: 120px;
+        border-bottom: 5px solid #5582cf;
+        width: 100%;
+        position: fixed;
+    }
+
+    .logo{
+        width: 275px;
+        height: 90px;
+        background-image: url('ace.jpg');
+        background-position: center;
+        background-size: cover;
+        margin-top: 13px;
+        margin-left: 1px;
+
+    }
+    .nav-links{
+        display: none;       
+    }
+    
+    .burger{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        padding: none;
+        display: flex;
+    } 
+    .overlay{
+        height: 0;
+        width: 100%;
+        z-index: 1;
+        top: 11%;
+        left: 0;
+        background-color: transparent;
+        overflow-x: hidden;
+        transition: all 0.5s ease;
+    }    
+    .overlay_content{
+        display: flex;
+        justify-content: space-around;
+        height: 50%;
+        flex-direction: column;
+        background-color: white;
+        font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }    
+    b{
+        font-size: 40px;
+    }   
+    .write-up{
+        width: 500px;
+    }
+    .head2-container{
+        width: 100%;
+        height: 250px;
+        background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('digital.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .first-write-up{
+        margin-top: 140px;
+        margin-left: 20px;
+    }
+    .head2{
+        margin-top: 0px;
+        font-family: montserrat;
+        font-size: 32px;
+    }
+
+    .head2-write-up{
+        width: 90%;
+        margin-top: 30px;
+        font-family: montserrat;
+        line-height: 30px;
+    }
+    .concept-container{
+        display: flex;
+        width: 100%;
+        height: 600px;
+    }
+    .concept-container-image{
+        width: 420px;
+        height: 300px;
+        margin-top: 130px;
+        margin-left: 0px; 
+        background-image: url('concept.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .concept-write-up{
+        width: 300px;
+        line-height: 30px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .team-container-write-up{
+        width: 90%;
+        font-size: 20px;
+        line-height: 32px;
+        font-family: montserrat;
+        color: white;
+    }    
+    .image-gallery{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 430px;
+    }
+    .write-up3{
+        width: 90%;
+        height: 150px;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+    .line3{
+        margin-top: 100px;
+    }
+    footer{
+        height: 900px;
+    }
+    .footer-shell{
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin-left: 10px;
+    }
+
+}
+@media screen and (max-width: 414px){
+    .first-image-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 400px;
+        background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('beautiful.jpg') ;
+        background-position: center 20px;
+        background-size: cover;
+    }    
+    .logo-and-nav{
+        display: flex;
+        height: 120px;
+        width: 100%;
+        border-bottom: 5px solid #5582cf;
+        position: fixed;
+    }
+    .overlay{
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 13%;
+        left: 0;
+        background-color: transparent;
+        overflow-x: hidden;
+        transition: all 0.5s ease;
+    }    
+    .overlay_content{
+        display: flex;
+        justify-content: space-around;
+        height: 46%;
+        flex-direction: column;
+        background-color: white;
+        font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .overlay a{
+        font-size: 13px;
+        text-decoration: none;
+        color:  black;
+        letter-spacing: 3px;
+        transition: all 0.7s ease;
+    }
+    .logo{
+        width: 215px;
+        height: 90px;
+        background-image: url('ace.jpg');
+        background-position: center;
+        background-size: cover;
+        margin-top: 6px;
+        margin-left: -10px;
+    }   
+    .first-write-up{
+        margin-top: 120px;
+        margin-left: 20px;
+        height: 300px;
+    }
+    b{
+        margin-top: -20px;
+        font-size: 30px;
+    }
+    .write-up{
+        width: 300px;
+        font-size: 13px;
+        line-height: 27px;
+        margin-top: -35px;
+    }
+    .btn2{
+        margin-top: -30px;
+    }
+    x{
+        display: none;
+    }
+    .head2{
+        margin-top: 0px;
+        font-family: montserrat;
+        font-size: 22px;
+    }
+    .head2-container{
+        width: 100%;
+        height: 300px;
+        background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('digital.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .head2-write-up{
+        width: 90%;
+        margin-top: 30px;
+        font-size: 14px;
+        font-family: montserrat;
+        line-height: 24px;
+    }
+    .our-concepts{
+        margin-top: 30px;
+        font-size: 22px;
+        font-family: montserrat;
+    } 
+    .line1{
+        margin: -10px;
+    }
+    .concept-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 700px;
+    }
+    .concept-container-image{
+        width: 430px;
+        height: 270px;
+        margin-top: 70px;
+        margin-left: 15px; 
+        background-image: url('concept.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .concept-write-up{
+        font-size: 14px;
+        width: 360px;
+        line-height: 30px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .team-container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        margin-top: 90px;
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('3004976.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .team-container-write-up{
+        width: 90%;
+        font-size: 14px;
+        line-height: 32px;
+        font-family: montserrat;
+        color: white;
+    }    
+    .image-gallery{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 930px;
+    }  
+    .write-up3{
+        width: 90%;
+        height: 150px;
+        line-height: 30px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    .line3{
+        margin-top: 220px;
+    }
+    .We-are-ace{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 300px;
+        height: 150px;
+        line-height: 35px;
+        margin-top: 20px;
+        font-size: 22px;
+        border-right: 4px solid #f9be3c;
+    }
+    footer{
+        height: 900px;
+        margin-top: 30px;
+    }
+    .footer-shell{
+        margin-top: -50px;
+        height: 850px;
+        width: 100%;
+    }
+    .text{
+        width: 350px;
+    }
+    .write-up-body{
+        width: 350px;
+    }
+    .whatsapp-phone-envelope{
+        width: 100%;
+        margin-left: -10px;
+    }
+   .whatsapp-phone-envelope-and-text{
+    width: 100%;
+    }
+    .footer-write-about-the-company-with-icons{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 411px){
+    .first-write-up{
+        margin-top: 120px;
+        margin-left: 10px;
+        height: 300px;
+    }
+    .overlay{
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        background-color: transparent;
+        overflow-x: hidden;
+        transition: all 0.5s ease;
+    }    
+    .overlay_content{
+        display: flex;
+        justify-content: space-around;
+        height: 50%;
+        flex-direction: column;
+        background-color: white;
+        font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+}
+@media screen and (max-width: 375px){
+    body{
+        overflow-x: hidden;
+    }
+    .first-image-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 360px;
+        background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('beautiful.jpg') ;
+        background-position: center 30px;
+        background-size: cover;
+    }    
+    b{
+        margin-top: -60px;
+        font-size: 25px;
+    }
+    .write-up{
+        width: 300px;
+        font-size: 13px;
+        line-height: 23px;
+        margin-top: -145px;
+    }
+    .btn2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 30px;
+        border: 2px solid white;
+        color: white;
+        font-size: 12px;
+        margin-top: -120px;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+    .overlay{
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 14%;
+        left: 0;
+        background-color: transparent;
+        overflow-x: hidden;
+        transition: all 0.5s ease;
+    }    
+    .overlay_content{
+        display: flex;
+        justify-content: space-around;
+        height: 50%;
+        flex-direction: column;
+        background-color: white;
+        font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .concept-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 720px;
+    }
+    .concept-container-image{
+        width: 430px;
+        height: 270px;
+        margin-top: 70px;
+        margin-left: 0px; 
+        background-image: url('concept.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .concept-write-up{
+        font-size: 14px;
+        width: 350px;
+        line-height: 30px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .line3{
+        margin-top: 270px;
+    }
+    .We-are-ace{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 300px;
+        height: 130px;
+        line-height: 35px;
+        margin-top: 20px;
+        font-size: 22px;
+        border-right: 4px solid #f9be3c;
+    }
+    footer{
+        background-color:#040607;
+        height: 950px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+}
+@media screen and (max-width: 360px){
+    .line3{
+        margin-top: 300px;
+    }
+}
